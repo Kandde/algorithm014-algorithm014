@@ -3,6 +3,8 @@ package action.threesum;
 import java.util.*;
 
 /**
+ * 1. 0815
+ *
  * @author zhaohongxin
  */
 class Solution {
@@ -24,7 +26,7 @@ class Solution {
 
     public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
-        Set<List<Integer>> result = new HashSet<>();
+        List<List<Integer>> result = new ArrayList<>();
         for (int i = 0; i < nums.length - 2; i ++) {
             if (nums[i] > 0) {
                 break;
